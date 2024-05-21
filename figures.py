@@ -6,7 +6,6 @@ class Figure:
         self.color = color
     def get_possible_moves(self,coords: list, board: list):
         moves = []
-        #Remove cells out of bounds
         for cell in moves:
             if (cell[0] or cell[1]) > 7 or (cell[0] or cell[1]) < 0:
                 moves.remove(cell)      
@@ -18,7 +17,6 @@ class Pawn(Figure):
         moves = []
         row, col = coords
         if self.color == "white":
-            #Check if figure can go diagonally
             moves.append((row+1,col+1))
             moves.append((row+1,col-1))
         else:
