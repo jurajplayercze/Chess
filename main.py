@@ -4,11 +4,11 @@ from figures import Rook,Knight,Bishop,Queen,King,Pawn,Figure
 #-Options------------------------------------------------
 RESOLUTION = 600,600
 CELL_SIZE = 75
+COLOR_TURN = "white"
 #--------------------------------------------------------
 
 BOARD = {}
 END = False
-COLOR_TURN = "white"
 SELECTED_FIGURE = None
 SELECTED_FIGURE_COORDS = None
 
