@@ -61,7 +61,7 @@ def is_same_color(color,coords):
     if isinstance(cell,Figure) and cell.color == color:
         return True
     return False
-#------Kings section---------------------------------------------------
+
 def get_king_coords(color):
     for cell in BOARD:
         if isinstance(BOARD.get(cell),King):
@@ -131,7 +131,6 @@ def check_for_checkmate():
             if all(not moves for moves in moves):
                 END = True
                 draw_ending_screen(COLOR_TURN)
-#----------------------------------------------------------------------
 
 def get_valid_moves(SELECTED_FIGURE: Figure, SELECTED_FIGURE_COORDS):
     moves = []
